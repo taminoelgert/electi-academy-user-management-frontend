@@ -1,0 +1,44 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  width: fit-content;
+  text-align: center;
+}
+
+.card {
+  padding: 20px 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+  box-shadow: 1px 1px 5px 1px #88888820;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.loginFormForgot {
+  float: right;
+}
+.loginFormButton {
+  padding: 0 40px;
+  margin: 0 auto;
+  margin-bottom: 15px !important;
+  margin-top: 5px;
+}
+.formItem {
+  margin-bottom: 30px;
+}

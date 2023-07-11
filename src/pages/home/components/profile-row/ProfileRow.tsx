@@ -5,7 +5,9 @@ import styles from "./ProfileRow.module.css";
 const ProfileRow = () => {
   return (
     <div className={styles.profileRow}>
-      <Avatar size={40}>MM</Avatar>
+      <Avatar size={40} style={{ backgroundColor: "#729eca" }}>
+        MM
+      </Avatar>
       <div>
         <p className={styles.title}>Name:</p>
         <p className={styles.value}>Max Mustermann</p>
