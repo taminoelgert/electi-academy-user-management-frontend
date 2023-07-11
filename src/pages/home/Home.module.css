@@ -1,0 +1,11 @@
+.content {
+  width: 100vw;
+  padding: 0 40px;
+}
+
+.title {
+  padding-right: 30px;
+  padding-bottom: 3px;
+  width: fit-content;
+  border-bottom: 1px solid #e7e7e7;
+}

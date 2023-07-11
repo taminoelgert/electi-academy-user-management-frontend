@@ -1,0 +1,29 @@
+.profileRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 1px 1px 5px 1px #88888820;
+  margin-bottom: 10px;
+
+  transition: 0.2s;
+}
+
+.profileRow:hover {
+  transform: scale(1.01);
+  background-color: #e7e7e722;
+}
+
+.profileRow .title {
+  color: gray;
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+.profileRow .value {
+  margin: 0;
+}
