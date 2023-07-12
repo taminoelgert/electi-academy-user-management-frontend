@@ -13,10 +13,10 @@ const Home = () => {
         <Title level={3} className={styles.title}>
           Gefundene Profile:
         </Title>
-        <ProfileRow />
-        <ProfileRow />
-        <ProfileRow />
-        <ProfileRow />
+          <ProfileRow name={'Max Mustermann'} isAdmin id={'hey'} birthday={'01.01.2000'} />
+          <ProfileRow name={'Max Mustermann'} isAdmin id={'hey'} birthday={'01.01.2000'} />
+          <ProfileRow name={'Max Mustermann'} isAdmin id={'hey'} birthday={'01.01.2000'} />
+
       </div>
       <FloatButton
         shape={"circle"}

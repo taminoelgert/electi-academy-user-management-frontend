@@ -9,13 +9,15 @@ import {
   LeftOutlined,
 } from "@ant-design/icons";
 import TextArea from "antd/es/input/TextArea";
+import {useNavigate} from "react-router-dom";
 
 const Profile = () => {
+  const navigate = useNavigate()
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <div className={styles.background}>
-          <Button shape="circle" icon={<LeftOutlined />} />
+          <Button shape="circle" icon={<LeftOutlined />} onClick={() => navigate('/')}/>
           <Button shape="circle" icon={<EditOutlined />} />
         </div>
         <Avatar size={200} className={styles.avatar}>

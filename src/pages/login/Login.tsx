@@ -3,9 +3,16 @@ import styles from "./Login.module.css";
 import { Button, Form, Input } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import { errorCode, usePost } from "../../hooks/useApi.tsx";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [login, isLoading, tryLogin] = usePost<any | errorCode>("/login");
+  useEffect(() => {
+    if (!login?.errorCode && login != null) navigate("/");
+  }, [login]);
+
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -16,8 +23,8 @@ const Login = () => {
           name="normal_login"
           className={styles.loginForm}
           initialValues={{ remember: true }}
-          onFinish={() => {
-            navigate("/home");
+          onFinish={(values) => {
+            tryLogin({ email: values.email, password: values.password });
           }}
         >
           <Form.Item
@@ -45,7 +52,7 @@ const Login = () => {
           <Button
             type="primary"
             htmlType="submit"
-            loading={false}
+            loading={isLoading}
             className={styles.loginFormButton}
           >
             Log in
