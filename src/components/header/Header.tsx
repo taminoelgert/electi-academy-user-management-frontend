@@ -50,9 +50,11 @@ const Header = ({ title }) => {
         {title}
       </Title>
       <Dropdown menu={{ items }} trigger={["click"]} placement="bottomRight">
-        <Avatar style={{ cursor: "pointer" }} size={35}>
-          {" "}
-          M{" "}
+        <Avatar
+          style={{ cursor: "pointer", backgroundColor: "#729eca" }}
+          size={40}
+        >
+          M
         </Avatar>
       </Dropdown>
     </div>
